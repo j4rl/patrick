@@ -20,5 +20,11 @@
     </textarea>
     <input type="submit" value="Skicka" name="btn">
 </form>
+<?php
+if(isset($_POST['btn'])){
+    echo $_POST['name'];
+}
+    
+?>
 </body>
 </html>
