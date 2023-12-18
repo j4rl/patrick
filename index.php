@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<?php
+if(isset($_POST['btn'])){
+    echo "<article>
+    <h1>".$_POST['rub']."</h1>
+    <b>".$_POST['ing']."</b><br>".
+    $_POST['text']."<br>
+    <i>".$_POST['by']."</i>
+    </article";
+}else{ ?>
+
+
 <form action="index.php" method="post">
     <label for="rub">Rubrik:</label>
     <input type="text" name="rub" id="rub" required placeholder="Rubrik">
@@ -19,9 +30,8 @@
     <input type="text" name="by" id="by">
     <input type="submit" value="Skicka" name="btn">
 </form>
-<?php
-if(isset($_POST['btn'])){
-    echo "<article><h1>".$_POST['rub']."</h1><b>".$_POST['ing']."</b><br>".$_POST['text']."<br><i>".$_POST['by']."</i>";
+
+    <?php
 }
     
 ?>
