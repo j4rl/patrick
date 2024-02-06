@@ -19,6 +19,7 @@ if(isset($_POST['btn'])){
 
 
 <form action="index.php" method="post">
+    <h1>Patrick</h1>
     <label for="rub">Rubrik:</label>
     <input type="text" name="rub" id="rub" required placeholder="Rubrik">
     <label for="ing">Ingress:</label>
